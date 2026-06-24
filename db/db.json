@@ -1,18 +1,238 @@
 {
-  "usuarios": [
+  "categorias": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "nome": "Pop Alternativo / Synth"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "nome": "Indie Folk"
+    },
+    {
+      "id": 3,
+      "nome": "Lo-fi Hip-Hop / Beats"
+    },
+    {
+      "id": 4,
+      "nome": "Rock Alternativo"
+    }
+  ],
+  "artistas": [
+    {
+      "id": 1,
+      "nome": "Luna Ravel",
+      "descricaoCurta": "Pop alternativo com influências etéreas e letras introspectivas.",
+      "descricaoCompleta": "Luna Ravel iniciou sua carreira nos palcos independentes e rapidamente cativou o público com sua voz suave e composições profundas. Seus álbuns exploram temas de autodescoberta, sonhos e relacionamentos modernos, misturando sintetizadores com batidas pop.",
+      "categoria": "Pop Alternativo / Synth",
+      "preco": 120,
+      "tags": [
+        "Synthpop",
+        "Dreamy",
+        "Vocal"
+      ],
+      "destaque": true,
+      "imagem": "https://picsum.photos/seed/luna42/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/luna42/320/340",
+      "albuns": [
+        {
+          "id": 101,
+          "titulo": "Midnight Echoes",
+          "ano": 2021,
+          "imagem": "https://picsum.photos/seed/midnight11/460/260"
+        },
+        {
+          "id": 102,
+          "titulo": "Starlight",
+          "ano": 2023,
+          "imagem": "https://picsum.photos/seed/starlight/460/260"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Kairo Vega",
+      "descricaoCurta": "Indie folk contemporâneo com violão e harmonias acústicas.",
+      "descricaoCompleta": "Com raízes na música folk tradicional, Kairo Vega traz uma abordagem moderna e intimista. Suas canções são marcadas por arranjos de violão complexos e letras que falam sobre a conexão com a natureza, a nostalgia e a simplicidade da vida no interior.",
+      "categoria": "Indie Folk",
+      "preco": 90,
+      "tags": [
+        "Acoustic",
+        "Warm",
+        "Nostalgia"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/kairo7/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/kairo7/320/340",
+      "albuns": [
+        {
+          "id": 201,
+          "titulo": "Paper Sails",
+          "ano": 2018,
+          "imagem": "https://picsum.photos/seed/papersails/460/260"
+        },
+        {
+          "id": 202,
+          "titulo": "Wooden Hearts",
+          "ano": 2020,
+          "imagem": "https://picsum.photos/seed/wooden/460/260"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Milo Sato",
+      "descricaoCurta": "Lo-fi hip-hop com batidas suaves e atmosferas urbanas.",
+      "descricaoCompleta": "Produtor musical que se destaca na cena Lo-fi global. Milo Sato cria trilhas sonoras perfeitas para estudo e relaxamento. Ele utiliza samples de jazz clássico e sons ambiente de metrópoles para criar camadas ricas, nostálgicas e tranquilizantes.",
+      "categoria": "Lo-fi Hip-Hop / Beats",
+      "preco": 75,
+      "tags": [
+        "Chill",
+        "Study",
+        "Jazz-beats"
+      ],
+      "destaque": true,
+      "imagem": "https://picsum.photos/seed/milo55/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/milo55/320/340",
+      "albuns": [
+        {
+          "id": 301,
+          "titulo": "Neon Archive",
+          "ano": 2021,
+          "imagem": "https://picsum.photos/seed/neon7788/460/260"
+        },
+        {
+          "id": 302,
+          "titulo": "Rainy Days",
+          "ano": 2022,
+          "imagem": "https://picsum.photos/seed/rainy/460/260"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "The Echoes",
+      "descricaoCurta": "Rock alternativo com guitarras marcantes e vocais rasgados.",
+      "descricaoCompleta": "Banda de rock alternativo formada por amigos de faculdade. Eles combinam a energia crua do rock dos anos 90 com uma produção moderna e letras que abordam questões existenciais da juventude de forma enérgica e envolvendo.",
+      "categoria": "Rock Alternativo",
+      "preco": 150,
+      "tags": [
+        "90s",
+        "Guitars",
+        "Energy"
+      ],
+      "destaque": true,
+      "imagem": "https://picsum.photos/seed/echoesband/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/echoesband/320/340",
+      "albuns": [
+        {
+          "id": 401,
+          "titulo": "Shattered Glass",
+          "ano": 2016,
+          "imagem": "https://picsum.photos/seed/shattered/460/260"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Aria Woods",
+      "descricaoCurta": "Ambient pop focado em texturas vocais e pianos minimalistas.",
+      "descricaoCompleta": "Explorando paisagens sonoras cinemáticas, Aria Woods cria arranjos de piano imersivos que dialogam diretamente com a melancolia e o isolamento urbano contemporâneo.",
+      "categoria": "Pop Alternativo / Synth",
+      "preco": 110,
+      "tags": [
+        "Ambient",
+        "Piano",
+        "Cinematic"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/aria/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/aria/320/340",
+      "albuns": []
+    },
+    {
+      "id": 6,
+      "nome": "Nova Pulse",
+      "descricaoCurta": "Synthwave enérgico inspirado nos anos 80 e estética cyberpunk.",
+      "descricaoCompleta": "Guitarras sintetizadas e baterias eletrônicas pulsantes guiam a jornada retrô do duo Nova Pulse, ideal para viagens noturnas de carro pelas metrópoles.",
+      "categoria": "Pop Alternativo / Synth",
+      "preco": 130,
+      "tags": [
+        "Synthwave",
+        "Cyberpunk",
+        "Retro"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/nova/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/nova/320/340",
+      "albuns": []
+    },
+    {
+      "id": 7,
+      "nome": "Silas Grey",
+      "descricaoCurta": "Folk de raiz focado em arranjos de banjo e narrativas poéticas.",
+      "descricaoCompleta": "Silas Grey reconecta o ouvinte às velhas baladas acústicas, trazendo contos sobre ferrovias antigas, fogueiras na mata e passados esquecidos pelo tempo.",
+      "categoria": "Indie Folk",
+      "preco": 85,
+      "tags": [
+        "Traditional",
+        "Banjo",
+        "Poetic"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/silas/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/silas/320/340",
+      "albuns": []
+    },
+    {
+      "id": 8,
+      "nome": "Vapor Blur",
+      "descricaoCurta": "Chillhop desacelerado com fortes influências de jazz clássico.",
+      "descricaoCompleta": "Com vinis arranhados e progressões de acordes suaves, o produtor Vapor Blur entrega a trilha sonora perfeita para cafeterias em dias chuvosos.",
+      "categoria": "Lo-fi Hip-Hop / Beats",
+      "preco": 70,
+      "tags": [
+        "Chillhop",
+        "Vinyl",
+        "Relaxing"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/vapor/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/vapor/320/340",
+      "albuns": []
+    },
+    {
+      "id": 9,
+      "nome": "Iron Velvet",
+      "descricaoCurta": "Stoner rock denso misturado com linhas de baixo pesadas.",
+      "descricaoCompleta": "Riffs de guitarra colossais e distorções viscerais marcam os palcos por onde passa o power-trio Iron Velvet, resgatando a crueza do rock de garagem.",
+      "categoria": "Rock Alternativo",
+      "preco": 140,
+      "tags": [
+        "Stoner",
+        "Riffs",
+        "Heavy"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/iron/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/iron/320/340",
+      "albuns": []
+    },
+    {
+      "id": 10,
+      "nome": "Tokyo Static",
+      "descricaoCurta": "Batidas de glitched lofi urbanas e captações sonoras de rua.",
+      "descricaoCompleta": "Gravando ruídos ambientes nas estações de trem do Japão, Tokyo Static processa esses sons orgânicos misturando-os com batidas de hip-hop texturizadas.",
+      "categoria": "Lo-fi Hip-Hop / Beats",
+      "preco": 80,
+      "tags": [
+        "Glitched",
+        "Field-recording",
+        "Metropolis"
+      ],
+      "destaque": false,
+      "imagem": "https://picsum.photos/seed/static/1200/500",
+      "imagem_thumb": "https://picsum.photos/seed/static/320/340",
+      "albuns": []
     }
   ]
 }

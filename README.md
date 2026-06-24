@@ -6,10 +6,10 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Frederico Marcos de Paula Marques
+- Matricula: 907680
+- Proposta de projeto escolhida: Proposta 1 – Pessoas e Produções (Pessoa: Artista; Produções: Álbuns musicais)
+- Breve descrição sobre seu projeto: O SoundHub é uma aplicação web que organiza e apresenta artistas musicais e seus respectivos álbuns em uma interface clara e intuitiva. A plataforma permite explorar informações sobre os artistas e suas produções de forma centralizada, facilitando a navegação e a descoberta de novos conteúdos musicais.
 
 **Registros do trabalho**
 
@@ -17,81 +17,32 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ```json
 {
-  "cidades": [
-    {
-      "id": 1,
-      "nome": "Paris",
-      "descricao": "Capital francesa famosa por arte, gastronomia e arquitetura icônica.",
-      "conteudo": "Paris oferece museus de classe mundial, boulevards arborizados e cafés charmosos. Ideal para quem busca história, cultura e experiências gastronômicas.",
-      "pais": "França",
-      "destaque": true,
-      "data": "2025-03-30",
-      "imagemPrincipal": "img/paris.jpg"
-    }
+  "categorias": [
+    { "id": 1, "nome": "Pop Alternativo / Synth" },
+    { "id": 2, "nome": "Indie Folk" },
+    { "id": 3, "nome": "Lo-fi Hip-Hop / Beats" },
+    { "id": 4, "nome": "Rock Alternativo" }
   ],
-  "atracoes": [
+  "artistas": [
     {
       "id": 1,
-      "cidadeId": 1,
-      "nome": "Torre Eiffel",
-      "descricao": "Monumento símbolo de Paris com mirantes panorâmicos.",
-      "imagem": "img/atracoes/torre_eiffel.jpg"
+      "nome": "Luna Ravel",
+      "descricaoCurta": "Pop alternativo com influências etéreas e letras introspectivas.",
+      "descricaoCompleta": "Luna Ravel iniciou sua carreira nos palcos independentes e rapidamente cativou o público com sua voz suave e composições profundas. Seus álbuns exploram temas de autodescoberta, sonhos e relacionamentos modernos, misturando sintetizadores com batidas pop.",
+      "categoria": "Pop Alternativo / Synth",
+      "preco": 120,
+      "tags": ["Synthpop", "Dreamy", "Vocal", "Etéreo"],
+      "destaque": true,
+      "imagem": "[https://picsum.photos/seed/luna42/1200/500](https://picsum.photos/seed/luna42/1200/500)",
+      "imagem_thumb": "[https://picsum.photos/seed/luna42/320/340](https://picsum.photos/seed/luna42/320/340)",
+      "albuns": [
+        { "id": 101, "titulo": "Midnight Echoes", "ano": 2021, "imagem": "[https://picsum.photos/seed/midnight11/460/260](https://picsum.photos/seed/midnight11/460/260)" }
+      ]
     }
   ]
 }
 ```
 
-<< COLOQUE A IMAGEM DA HOME AQUI >>
+![Homepage](public/assets/img/home.png)
 
-<< COLOQUE A IMAGEM DA TELA DE DETALHES AQUI >>
-
-
-
-## **Orientações Gerais**
-
-Nesse projeto você vai encontrar a seguinte estrutura base:
-
-* **Pasta db**
-  Essa pasta contem um único arquivo: `db.json`. Esse arquivo serve de banco de dados simulado e nele você deve colocar as estruturas de dados que o seu projeto manipula.
-  * **OBS**: Já incluímos a estrutura de usuários como exemplo e para que você possa utlizar no seu projeto. Se precisar, faça os ajustes necessários para seu projeto.
-* **Pasta public**
-  Nesta pasta você deve colocar todos os arquivos do seu site (front end). Aqui vão os arquivos HTML, CSS, JavaScript, imagens, vídeos e tudo o mais que precisar para a interface do usuário.
-* **Arquivo README.md**
-  Este arquivo em que são colocadas as informações de quem está desenvolvendo esse projeto e os registros solicitados no enunciado da tarefa.
-* **Arquivo .gitignore**
-  Configuração do que deve ser ignorado pelo git evitando que seja enviado para o servidor no GitHub.
-* **Arquivo package.json**
-  Considerado o manifesto do projeto ou arquivo de configuração. Nesle são incluídas as informações básicas sobre o projeto (descrição, versão, palavras-chave, licença, copyright), a lista de pacotes dos quais o projeto depende tanto para desenvolvimento quanto execução, uma lista de  do projeto, scripts entre outras opções.
-  * **OBS**: Esse arquivo é criado assim que o projeto é iniciado por meio do comando `npm init`.
-  * **OBS2**: Esse arquivo já traz a informação de necessidade do JSONServer.
-* **Pasta node_modules**
-  Local onde ficam os pacotes dos quais o projeto depende. Evite enviar essa pasta para o repositório remoto. Essa pasta é reconstruída toda vez que se executa o comando `npm install`.
-
-**Ambiente de Desenvolvimento (IMPORTANTE)**
-
-> A partir de agora, **NÃO utilizamos mais o LiveServer/FiveServer** durante o processo de desenvolvimento. O próprio JSONServer faz o papel de servidor.
-
-Para iniciar o JSONServer e acessar os arquivos do seu site, siga os seguintes passos:
-
-1. Abra a pasta do projeto dentro da sua IDE (por exemplo, Visual Studio Code)
-2. Abra uma janela de teminal e certifique-se que a pasta do terminal é a pasta do projeto
-3. Execute o comando `npm install`
-   Isso vai reconstruir a pasta node_modules e instalar todos os pacotes necessários para o nosso ambiente de desenvolvimento (Ex: JSONServer).
-4. Execute o comando `npm start`
-   Isso vai executar o JSONServer e permitir que você consiga acessar o seu site no navegador.
-5. Para testar o projeto:
-   1. **Site Front End**: abra um navegador e acesse o seu site pela seguinte URL: 
-      [http://localhost:3000]()
-   2. **Site Back End**: abra o navegador e acesse as informações da estrutura de usuários por meio da API REST do JSONServer a partir da seguinte URL: 
-      [http://localhost:3000/usuarios](http://localhost:3000/usuarios)
-
-Ao criar suas estruturas de dados no arquivo db.json, você poderá obter estes dados através do endereço: http://localhost:3000/SUA_ESTRUTURA, tal qual como foi feito com a estrutura de usuários. **IMPORTANTE**: Ao editar o arquivo db.json, é necessário parar e reiniciar o JSONServer.
-
-**IMPORTANTE:** Assim como informado anteriormente, capriche na etapa pois você vai precisar dessa parte para as próximas semanas. 
-
-**IMPORTANTE:** Você deve trabalhar:
-
-* na pasta **`public`,** para os arquivos de front end, mantendo os arquivos **`index.html`**, **`detalhes.html`**, **`styles.css`** e **`app.js`** com estes nomes, e
-* na pasta **`db`**, com o arquivo `db.json`.
-
-Deixe todos os demais arquivos e pastas desse repositório inalterados. **PRESTE MUITA ATENÇÃO NISSO.**
+![Detalhes](public/assets/img/detalhes.png)
